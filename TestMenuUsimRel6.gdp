@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="GDPtoHTML.xsl" type="text/xsl"?>
+
+<JCProject> 
+  <!-- This section will defined the specific smart card type -->  
+  <Card Name="USim Card R6"/>  
+  <!-- This section will defined the output file paths of the Project -->  
+  <Path ClassDir="./classes" ConversionDir="./oncard"/>  
+  <Version Major="2" Minor="0"/>  
+  <!-- This section will defined all the properties of the Application loaded on the smart card -->  
+  <Application Name="TestMenuUsimRel6" Label="This is a Gemplus example"> 
+    <!-- You can customize the properties of this Package or add another here -->  
+    <Package Name="testmenuusimrel6" Aid="A0000000185000000000000052414460" DapAlgoName="" DapSecretKey="" EepromSize="0000" FileSize="0000" LoadToken="" RamSize="0000" SecurityDomainAid=""></Package>  
+    <Applet ClassName="TestMenuUsimRel6" Aid="A0000000185000000000000052414461" Index="1">
+      <!--If you add another Applet, you should increase his Index number-->
+      <Instance Aid="A0000000185000000000000052414461" Index="1" ApplicationSpecificParameters="" EepromSize="0000" RamSize="0000" InstallToken="" Privilege="00">
+        <!--If you add another Instance, you should increase his Index number-->
+        <GSMParameter TextMaxLength="14" MaxNumberOfMenuEntries="02" PriorityLevel="FF" TimerMaxNumber="00" Menus="00000000">
+          <!--You can customize the GSM parameters of this Instance here-->
+        </GSMParameter>
+        <UICCParameter>
+          <!--You can customize the UICC parameters of this Instance here-->
+          <UICCToolkitParameter>
+            <UICCR6ToolkitParameter MaximumNumberOfServices="00"/>
+          </UICCToolkitParameter>
+          <!--You can customize the UICC Access Application parameters of this Instance here-->
+          <UICCAccessApplicationParameter Index="1">
+            <UICCR6AccessApplicationParameter AccessDomainParameter="00" AccessDomainData=""/>
+          </UICCAccessApplicationParameter>
+        </UICCParameter>
+      </Instance>
+    </Applet>
+  </Application> 
+</JCProject>

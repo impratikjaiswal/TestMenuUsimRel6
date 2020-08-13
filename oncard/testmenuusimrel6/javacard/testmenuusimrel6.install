@@ -1,0 +1,29 @@
+[CONVERT]
+PackageAID = A0000000185000000000000052414460
+PackageVersion = 2.0
+PackageName = testmenuusimrel6
+AppletClassAID = A0000000185000000000000052414461
+AppletClassName = testmenuusimrel6.TestMenuUsimRel6
+
+[LOAD]
+MaxLoadCommandDataLength = C2
+
+[INSTALL(load)]
+PackageAID = A0000000185000000000000052414460
+PackageNonVolatileMemSize = 0000
+
+[INSTALL(install)]
+PackageAID = A0000000185000000000000052414460
+AppletClassAID = A0000000185000000000000052414461
+InstanceAID = A0000000185000000000000052414461
+InstallationNonVolatileMemSize = 0000
+InstallationVolatileMemSize = 0000
+AccessDomain = 00
+PriorityLevel = FF
+MaxNumberOfTimers = 00
+MaxMenuEntryTextLength = 14
+MaxNumberOfMenuEntries = 02
+MaxMenuEntryNumber = 02
+MenuEntriesPositionIdentifier = 00000000
+MaxNumberOfChannels = 00
+MSLFieldLength = 00
